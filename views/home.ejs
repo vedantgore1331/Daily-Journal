@@ -7,6 +7,7 @@
 <br>
 <a href="/compose" class="btn btn-primary">Compose</a>
 <br>
+<div class="main">
 <% if (locals.array) { %>
 <% array.forEach(function(element){ %>
 <h1><%- element.title %></h1>
@@ -20,4 +21,5 @@
 </form>
 <% }) %>
 <% } %>
+</div> 
 <%- include("partials/footer.ejs") %>
